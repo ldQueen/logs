@@ -1,31 +1,57 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div class="home">
+    <el-container>
+  <el-header>日志管理</el-header>
+  <el-container>
+    <el-aside width="200px">
+      <div>
+        <i class="el-icon-s-home"></i>
+        <router-link to="/">dashboard</router-link>
+      </div>
+      <div>
+        <i class="el-icon-s-data"></i>
+        <router-link to="/logline">日志列表</router-link>
+      </div>
+      </el-aside>
+    <el-container>
+      <el-main> <router-view/></el-main>
+      <el-footer>@版权所有  myself</el-footer>
+    </el-container>
+  </el-container>
+</el-container>
   </div>
 </template>
 
+<script>
+// @ is an alias to /src
+// import HelloWorld from '@/components/HelloWorld.vue'
+
+export default {
+  name: 'home',
+  components: {
+   
+  }
+}
+</script>
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+ .el-header, .el-footer {
+    background-color: #B3C0D1;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+  }
+  
+  .el-aside {
+    background-color: #D3DCE6;
+    color: #333;
+    text-align: center;
+    line-height: 434px;
+  }
+  
+  .el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 16px;
+  }
 </style>

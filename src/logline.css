@@ -1,0 +1,25 @@
+.selectBox{
+  display: flex;
+ flex-wrap: nowrap;
+ /* justify-content:space-between;
+ width: 90%; */
+ margin-bottom: 30px;
+ margin-top: 10px;
+}
+.selectStyle {
+  line-height: 10px;
+  margin-right: 60px;
+  width: 217px;
+}
+.selectDate{
+  margin-right: 66px;
+  margin-left: 6px;
+  width: 400px;
+}
+.selectButton{
+  widows: 90px;
+  background-color: #B3C0D1;
+}
+.block{
+  margin-top: 30px;
+}
